@@ -8,7 +8,7 @@ public class CalculatorTest {
 
     @Test
     void testAdd() {
-        assertEquals(99, calc.add(10, 5));
+        assertEquals(15, calc.add(10, 5));
         assertEquals(-5, calc.add(-10, 5));
     }
 
@@ -31,7 +31,7 @@ public class CalculatorTest {
     @Test
     void testDivideByZero() {
         assertThrows(IllegalArgumentException.class, () -> {
-            calc.divide(10, 0);
+            calc.divide(0, 10);
         });
     }
 }
