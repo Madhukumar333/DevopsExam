@@ -31,7 +31,7 @@ public class CalculatorTest {
     @Test
     void testDivideByZero() {
         assertThrows(IllegalArgumentException.class, () -> {
-            calc.divide(0, 10);
+            calc.divide(10,0);
         });
     }
 }
